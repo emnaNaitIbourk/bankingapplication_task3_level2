@@ -98,7 +98,7 @@ public class ATM_GUI extends JFrame{
 
                 }
                 if(isValid==true&&!name.isEmpty()&&!number.isEmpty()&&number.matches("\\d{8}")){
-                    messageLabel.setText("Your Bank Account has been created successfully:) "+name+".");
+                    messageLabel.setText("Your Bank Account has been created successfully ✅  "+name+".");
                     messageLabel.setForeground(Color.GREEN);
                 }
                 else{
@@ -118,7 +118,7 @@ public class ATM_GUI extends JFrame{
 
 
 
-                        JLabel successMsg=new JLabel("Your deposit Transaction is successfully completed:)");
+                        JLabel successMsg=new JLabel("Your deposit Transaction is successfully completed ✅");
                         successMsg.setFont(myFont);
                         successMsg.setForeground(Color.BLUE);
                         JButton successOk=new JButton("ok");
@@ -159,7 +159,7 @@ public class ATM_GUI extends JFrame{
                         updateBalance();
 
 
-                        JLabel withdrawMsg=new JLabel("Your withdraw transaction is successfully completed:)");
+                        JLabel withdrawMsg=new JLabel("Your withdraw transaction is successfully completed ✅");
                         withdrawMsg.setFont(myFont);
                         withdrawMsg.setForeground(Color.BLUE);
                         JButton withOk=new JButton("Ok");
