@@ -102,7 +102,7 @@ public class ATM_GUI extends JFrame{
                     messageLabel.setForeground(Color.GREEN);
                 }
                 else{
-                    messageLabel.setText("Your bank account creation has failed!");
+                    messageLabel.setText("Your bank account creation has failed❌");
                     messageLabel.setForeground(Color.RED);
                 }
             }
@@ -118,7 +118,7 @@ public class ATM_GUI extends JFrame{
 
 
 
-                        JLabel successMsg=new JLabel("Your deposit Transaction is successfully completed ✅");
+                        JLabel successMsg=new JLabel("Your deposit Transaction is successfully completed ");
                         successMsg.setFont(myFont);
                         successMsg.setForeground(Color.BLUE);
                         JButton successOk=new JButton("ok");
@@ -135,7 +135,7 @@ public class ATM_GUI extends JFrame{
                     }
                 } catch (NumberFormatException ex){
                     Toolkit.getDefaultToolkit().beep();
-                    JLabel depoErrorLabel=new JLabel("Invalid Amount!Your deposit transaction failed!");
+                    JLabel depoErrorLabel=new JLabel("Invalid Amount!Your deposit transaction failed X");
                     depoErrorLabel.setForeground(Color.red);
                     JButton okErrorbtn=new JButton("Ok");
                     okErrorbtn.setFocusPainted(false);
@@ -159,7 +159,7 @@ public class ATM_GUI extends JFrame{
                         updateBalance();
 
 
-                        JLabel withdrawMsg=new JLabel("Your withdraw transaction is successfully completed ✅");
+                        JLabel withdrawMsg=new JLabel("Your withdraw transaction is successfully completed ");
                         withdrawMsg.setFont(myFont);
                         withdrawMsg.setForeground(Color.BLUE);
                         JButton withOk=new JButton("Ok");
@@ -174,7 +174,7 @@ public class ATM_GUI extends JFrame{
                     else{
                         Toolkit.getDefaultToolkit().beep();
 
-                        JLabel withInsuf=new JLabel("Insufficient Funds!");
+                        JLabel withInsuf=new JLabel("Insufficient Funds X");
                         withInsuf.setFont(myFont);
                         withInsuf.setForeground(Color.red);
                         JButton witherrok= new JButton("Ok");
@@ -189,7 +189,7 @@ public class ATM_GUI extends JFrame{
                 }catch(NumberFormatException excep){
                     Toolkit.getDefaultToolkit().beep();
 
-                    JLabel withdrEr=new JLabel("Invalid withdrawal amount X Try again!");
+                    JLabel withdrEr=new JLabel("Invalid withdrawal amount  X Try again!");
                     withdrEr.setFont(myFont);
                     withdrEr.setForeground(Color.red);
                     JButton okWithd= new JButton("Ok");
